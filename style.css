@@ -1,0 +1,154 @@
+.container {
+    background-image: linear-gradient(to right, rgb(107, 179, 179), rgb(12, 248, 248));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh; 
+    width: 100%;
+    overflow: hidden; /* To ensure bubbles stay within the container */
+}
+
+/* Style for static bubbles */
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent bubbles */
+}
+
+/* Specific bubbles with different sizes and positions */
+.bubble1 {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 15%;
+}
+
+.bubble2 {
+    width: 150px;
+    height: 150px;
+    bottom: 20%;
+    right: 10%;
+}
+
+.bubble3 {
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 60%;
+}
+
+.card {
+    width: 25rem;
+    max-width: 100%;
+    height: 30rem;
+    border-radius: 1.25rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Shadow at the bottom */
+}
+
+
+
+.top-half {
+    /* Set the main gradient background with increased opacity */
+    background: linear-gradient(to right, rgba(107, 179, 179, 0.9), rgba(12, 248, 248, 0.9));
+    
+    /* Keep the carpet texture */
+    background-image: url('images/rough-carpet-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Make the carpet texture less visible */
+    opacity: 0.6; /* Adjust this to your liking; lower means more color and less texture */
+    
+    height: 30%;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+.bottom-half {
+    background-color: white;
+    height: 100vh;
+    position: relative;
+    padding-top: 4rem; 
+    text-align: center; 
+}
+
+.profile-image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%; 
+    position: absolute;
+    top: 20%; 
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid white;
+    z-index: 1; 
+}
+
+/* Adjusted font for profile text */
+.profile-text {
+    font-size: 1.3rem;
+    color: black;
+    margin-top: 1rem;
+    font-family: "Arial Black", Arial, sans-serif;
+    font-weight: bold;
+}
+
+
+.bio {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 0.8rem; 
+    width: 100%;
+    margin-top: 1rem; 
+}
+
+
+.number {
+    font-size: 1.3rem;
+    color: grey;
+    font-family: "Arial Black", Arial, sans-serif;
+    font-weight: bold;
+}
+
+.city {
+    color: grey;
+    margin-top: 0;
+    font-size: 1rem;
+    font-family: "Arial Black", Arial, sans-serif;
+    font-weight: bold;
+}
+
+.line hr {
+    border: none; 
+    height: 0.0625rem; 
+    background-color: rgb(221, 217, 217); 
+    width: 100%; 
+    margin-top: 2rem;
+}
+
+.social-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.follow-number, .like-number, .photos-number {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #000;
+    font-family: "Arial Black", Arial, sans-serif;
+}
+
+.follow, .likes, .photos {
+    color: grey;
+    font-family: "Arial Black", Arial, sans-serif;
+    font-weight: bold;
+}
